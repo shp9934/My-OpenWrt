@@ -17,12 +17,13 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/LiBwrt/openwrt-6.x
+  REPO_BRANCH: master  # 请确认 LiBwrt/openwrt-6.x 的默认分支是 master 还是 main，通常是 master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
+  # ... 保持后面的默认不变 ...
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
